@@ -28,11 +28,19 @@ func DoSomething(p interface{}){
 }
 
 func TestEmptyInterfaceAssertion(t *testing.T){
-	DoSomething(10)
-	DoSomething("10")
-	var p interface{}
-	p = []int{1,2,3}
-	t.Logf("%T",p)
+	//DoSomething(10)
+	//DoSomething("10")
+	//var p interface{}
+	//p = []int{1,2,3}
+	//t.Logf("%T",p)
 	//t.Log(reflect.TypeOf(p))
+	var a float64 = 1800
+	var b float64 = 1799.99
+	t.Log(a - b)
 }
+
+func CeilFloat(a,b float64){
+
+}
+
 
